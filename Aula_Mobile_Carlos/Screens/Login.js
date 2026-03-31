@@ -2,7 +2,7 @@ import {View, Text, Image, StyleSheet} from 'react-native';
 import { Button, TextInput } from 'react-native';
 
 
-export default function Login(){
+export default function Login({navigation}){
     
     return(
         
@@ -19,7 +19,13 @@ export default function Login(){
             <TextInput style={styles.input} placeholder='Usuário' placeholderTextColor={'#535353ff'}/>
             <TextInput style={styles.input} placeholder='Senha' placeholderTextColor={'#535353ff'}/>
 
-            <Button title="Enviar" color="#ff0000ff"/>
+            <View style={styles.row}>
+            <Button title="Enviar" color="#ff0000ff"
+            onPress={() => navigation.navigate('Home Screen')}/>
+
+                        <Button title="Pessoas" color="#00b7ffff"
+            onPress={() => navigation.navigate('Pessoas Tela')}/>
+            </View>
             
         </View>
     )
@@ -58,4 +64,11 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: 10,
     },
+     row:{
+        
+        padding: 10,
+        gap: 43,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+    }
 })
