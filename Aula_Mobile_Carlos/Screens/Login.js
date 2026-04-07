@@ -21,10 +21,10 @@ export default function Login({navigation}){
 
             <View style={styles.row}>
             <Button title="Enviar" color="#ff0000ff"
-            onPress={() => navigation.navigate('Home Screen')}/>
+            onPress={() => navigation.navigate('Home')}/>
 
                         <Button title="Pessoas" color="#00b7ffff"
-            onPress={() => navigation.navigate('Pessoas Tela')}/>
+            onPress={() => navigation.navigate('Pessoas')}/>
             </View>
             
         </View>
