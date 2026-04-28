@@ -8,6 +8,8 @@ import Entypo from '@expo/vector-icons/Entypo';
 import Login from './Screens/Login';
 import Home from './Screens/Home';
 import Pessoas from "./Screens/Pessoas";
+import ExemploAsyncStorage from "./Screens/ExemploAsyncStorage";
+import Exemplo1AsyncStorage from "./Screens/Exemplo1AsyncStorage";
 
 function TabNavigate(){
   const Tab = createBottomTabNavigator();
@@ -29,6 +31,7 @@ export default function App() {
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="Home" component={TabNavigate}/>
         <Stack.Screen name="Pessoas" component={TabNavigate}/>
+        <Stack.Screen name="Async" component={Exemplo1AsyncStorage}/>
       </Stack.Navigator>
 
     </NavigationContainer>

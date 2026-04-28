@@ -11,7 +11,7 @@ export default function Home() {
 
     <ScrollView style={{flex:1}}>
     <View style={styles.container}>
-      <Text style={styles.txt}>TITULO</Text>
+      <Text style={styles.txt}>Motoristas</Text>
 
       {drivers.map((drivers) => (
       <Card>

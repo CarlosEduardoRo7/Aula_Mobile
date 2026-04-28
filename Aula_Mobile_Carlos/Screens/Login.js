@@ -23,8 +23,12 @@ export default function Login({navigation}){
             <Button title="Enviar" color="#ff0000ff"
             onPress={() => navigation.navigate('Home')}/>
 
-                        <Button title="Pessoas" color="#00b7ffff"
+            <Button title="Pessoas" color="#00b7ffff"
             onPress={() => navigation.navigate('Pessoas')}/>
+
+            <Button title="Async" color="#ff0044ff"
+            onPress={() => navigation.navigate('Async')}/>
+
             </View>
             
         </View>
