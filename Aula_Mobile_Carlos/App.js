@@ -10,6 +10,7 @@ import Home from './Screens/Home';
 import Pessoas from "./Screens/Pessoas";
 import ExemploAsyncStorage from "./Screens/ExemploAsyncStorage";
 import Exemplo1AsyncStorage from "./Screens/Exemplo1AsyncStorage";
+import Produtos from "./Screens/Produtos_SQL";
 
 function TabNavigate(){
   const Tab = createBottomTabNavigator();
@@ -32,6 +33,7 @@ export default function App() {
         <Stack.Screen name="Home" component={TabNavigate}/>
         <Stack.Screen name="Pessoas" component={TabNavigate}/>
         <Stack.Screen name="Async" component={Exemplo1AsyncStorage}/>
+        <Stack.Screen name="Produtos" component={Produtos}/>
       </Stack.Navigator>
 
     </NavigationContainer>
